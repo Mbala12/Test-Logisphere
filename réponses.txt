@@ -1,0 +1,39 @@
+Fournir les réponses à ces questions avec ta soumission dans un fichier "réponses.txt":
+
+- Combien de temps en tout as-tu passé pour réaliser cet exercice? 
+  R/ 1 jour --> 7 heures
+
+- Quel langage as-tu utilisé (C# ou Java)? 
+  R/ C#
+
+- Quel IDE as-tu utilisé? 
+  R/ Visual Studio 2022
+
+- Quels framework(s) de test as-tu utilisé(s)?
+  R/ xUnit et Moq
+
+- Éléments de réponse pour la 2e partie (refactoring)
+  R/ 
+  1. Definition du re-usinage (ou refactoring): C'est une activité qui consiste à améliorer la structure interne d'un code existant sans en modifier le comportement externe. 
+  L'objectif du re-usinage est d'obtenir du code plus propre, plus modulaire, plus lisible, et plus facile à maintenir ou à tester.
+
+  2. Stratégie à employer avant le re-usinage:
+  Il faudrait:
+  2.1. S'assurer que tous les tests unitaires sont présents et passent avec success
+  2.2. Identifier les zones problematiques (ex: couplage fort, noms ambigus, etc.)
+  2.3. Introduire l'injection de dependances (DI)
+  2.4. Realiser les tests apres chaque changement
+
+- Réponse à la question bonus (dernière partie)
+  R/ 
+  Lors d'un achat ou d'un remboursement, il existe un risque d'incoherence des quantites (ex: si une panne survient entre la reduction de stock et l'ajout chez le client).
+Pour garantir l'integrite, il faut traiter ces deux operations comme une seule unite atomique.
+
+Ce qui peut etre recommandees comme ameliorations:
+
+  3.1. Utilisation d'une transaction atomique (base de donnees)
+  3.2. Application du principe ACID (Atomicite, Coherence, Isolation et Durabilite)
+  3.3. Gestion d'erreurs et compensation
+  3.4. Possibilite d'utiliser un modele de "Unit of Work"
+
+  Bref: je dirais que les adjustements de quantite doivent etre effectues dans une transaction atomique afin d'eviter toute perte ou incoherence en cas de panne technique.
