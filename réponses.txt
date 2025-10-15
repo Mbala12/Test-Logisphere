@@ -7,7 +7,7 @@ Fournir les réponses à ces questions avec ta soumission dans un fichier "répo
   R/ C#
 
 - Quel IDE as-tu utilisé? 
-  R/ Visual Studio 2022
+  R/ Visual Studio 2022 et VS Code.
 
 - Quels framework(s) de test as-tu utilisé(s)?
   R/ xUnit et Moq
